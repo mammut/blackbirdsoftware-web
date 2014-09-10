@@ -85,12 +85,6 @@
       return false;
     });
       
-    $('.heart').mouseover(function(){
-        $(this).find('i').removeClass('fa-heart-o').addClass('fa-heart');
-      }).mouseout(function(){
-        $(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
-      });
-      
       function sdf_FTS(_number,_decimal,_separator)
       {
         var decimal=(typeof(_decimal)!='undefined')?_decimal:2;
@@ -135,27 +129,20 @@
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-     
-      var $menu = $("#menuF");
-          
-      $(window).scroll(function(){
-          if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
-              $menu.fadeOut('fast',function(){
-                  $(this).removeClass("default")
-                         .addClass("fixed transbg")
-                         .fadeIn('fast');
-              });
-          } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
-              $menu.fadeOut('fast',function(){
-                  $(this).removeClass("fixed transbg")
-                         .addClass("default")
-                         .fadeIn('fast');
-              });
-          }
-      });
-   });
-  //jQuery
+  $(function(){ // document ready
+    if (!!$('#menuF').offset()) { // make sure "#menuF" element exists
+      var stickyTop = $('#menuF').offset().top; // returns number 
+      $(window).scroll(function(){ // scroll event
+        var windowTop = $(window).scrollTop(); // returns number 
+        if (stickyTop < windowTop){
+          $('#menuF').removeClass('default').addClass('fixed');
+        }
+        else {
+          $('#menuF').removeClass('fixed').addClass('default');
+        }
+      });
+    }
+  });
 </script>
 <script>
   /*menu*/
@@ -190,10 +177,8 @@
   });   
 </script> 
 <script type="text/javascript" charset="utf-8">
-
   jQuery(document).ready(function(){
     jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true, social_tools: ''});
-    
   });
 </script>
 
