@@ -6,62 +6,65 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 Sep 2014 16:49:05 -0300</pubDate>
-    <lastBuildDate>Wed, 10 Sep 2014 16:49:05 -0300</lastBuildDate>
+    <pubDate>Wed, 10 Sep 2014 18:41:46 -0300</pubDate>
+    <lastBuildDate>Wed, 10 Sep 2014 18:41:46 -0300</lastBuildDate>
     <generator>Jekyll v2.3.0</generator>
     
       <item>
-        <title>Reino Aritmetico v0.0.2</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Inauguramos nuestro nuevo sitio web</title>
+        <description>&lt;p&gt;Hoy 11 de setiembre blackbird software inaugura su nuevo sitio web. Aquí podras conocer todo sobre nosotros, quienes somos, nuestros proyectos y actualizaciones.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Te invitamos a compartirla para que el mundo se entere. &lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;h3&gt;Sobre el diseño&lt;/h3&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;El sitio web es del tipo Single Page, todo el contenido se encuentra en una sola pagina vertical, se navega con un menu que acompaña al usuario. El sitio es 100% responsive
+para una facil visualizacion dispositivos móviles como tables y celulares. &lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Si deseas conocer mas sobre el diseño de sitios web Sinle Page puedes visitar &lt;a href=&quot;http://www.awwwards.com/websites/single-page/&quot;&gt;awwwards.com&lt;/a&gt; para ver los mejores ejemplos.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 05 Sep 2014 15:13:37 -0400</pubDate>
-        <link>/jekyll/update/2014/09/05/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/jekyll/update/2014/09/05/welcome-to-jekyll.html</guid>
+        <pubDate>Thu, 11 Sep 2014 16:13:37 -0300</pubDate>
+        <link>/update/2014/09/11/jajaja.html</link>
+        <guid isPermaLink="true">/update/2014/09/11/jajaja.html</guid>
         
-        <category>Reino Aritmetico</category>
+        <category>Sitio Web</category>
         
-        <category>Release</category>
+        <category>Diseño</category>
         
+        <category>Responsive</category>
         
-        <category>jekyll</category>
         
         <category>update</category>
         
       </item>
     
       <item>
-        <title>Blackbird software inaugura su sitio web</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+        <title>Reino Aritmetico v0.0.2</title>
+        <description>&lt;p&gt;Hoy lanzamos el releasee v0.0.2 de nuestro proyecto Reino Aritmético. En esta oportunidad se incorporo la funcionalidad básica de jugabilidad. 
+Si no conoces el proyecto te invitamos a leer nuestra seccion de proyectos.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h3&gt;Cambios moviles/server&lt;/h3&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;En esta oportunidad incorporamos la capacidad a los jugadores de poder elegir su personaje tipo al momento de registrarse en el sistema. Este personaje puede ser 
+un Archer, Warrior y Wizard. Una vez registrado los niños pueden ver a su personaje unirse a una partida.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Cambios moviles/desktop&lt;/h3&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Se estableció comunicación a travez de sockets entre los moviles y el juego. Tomamos esta desicion para poder tener comunicación bilateral basada en eventos (JavaScript funciona de 
+maravilla con eventos).&lt;/p&gt;
 
+&lt;p&gt;Además el profesor puede configurar partidas con cierto numero de jugadores y seleccion de numero de preguntas para que luego los niños puedan unirse.
+Hay un ciclo basico del juego en que se les manda una pregunta a cada uno y se espera a su respuesta. Se muestra esta en la pantalla principal. Durante una partida
+deben contestar las preguntas propuestas. El juego termina una vez que todos contestaron sus preguntas.&lt;/p&gt;
+
+&lt;h3&gt;Cambios desktop/server&lt;/h3&gt;
+
+&lt;p&gt;El juego en el desktop al momento de iniciar una partida le pide un conjunto de preguntas (de cierta dificultad establecida por el profesor en el servidor) para poder realizar la partida.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 04 Sep 2014 15:13:37 -0400</pubDate>
-        <link>/jekyll/update/2014/09/04/jajaja.html</link>
-        <guid isPermaLink="true">/jekyll/update/2014/09/04/jajaja.html</guid>
+        <pubDate>Fri, 05 Sep 2014 15:13:37 -0400</pubDate>
+        <link>/jekyll/update/2014/09/05/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/09/05/welcome-to-jekyll.html</guid>
         
         <category>Reino Aritmetico</category>
         

@@ -3,25 +3,27 @@ layout: post
 title:  "Reino Aritmetico v0.0.2"
 date:   2014-09-05 19:13:37
 categories: jekyll update
-featured_image: "images/picNews/news1.jpg"
+featured_image: "img/news/release-0.0.2.jpg"
 tags: ["Reino Aritmetico", 'Release']
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Hoy lanzamos el releasee v0.0.2 de nuestro proyecto Reino Aritmético. En esta oportunidad se incorporo la funcionalidad básica de jugabilidad. 
+Si no conoces el proyecto te invitamos a leer nuestra seccion de proyectos.
 
-Jekyll also offers powerful support for code snippets:
+<h3>Cambios moviles/server</h3>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+En esta oportunidad incorporamos la capacidad a los jugadores de poder elegir su personaje tipo al momento de registrarse en el sistema. Este personaje puede ser 
+un Archer, Warrior y Wizard. Una vez registrado los niños pueden ver a su personaje unirse a una partida.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+<h3>Cambios moviles/desktop</h3>
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+Se estableció comunicación a travez de sockets entre los moviles y el juego. Tomamos esta desicion para poder tener comunicación bilateral basada en eventos (JavaScript funciona de 
+maravilla con eventos).
+
+Además el profesor puede configurar partidas con cierto numero de jugadores y seleccion de numero de preguntas para que luego los niños puedan unirse.
+Hay un ciclo basico del juego en que se les manda una pregunta a cada uno y se espera a su respuesta. Se muestra esta en la pantalla principal. Durante una partida
+deben contestar las preguntas propuestas. El juego termina una vez que todos contestaron sus preguntas.
+
+<h3>Cambios desktop/server</h3>
+
+El juego en el desktop al momento de iniciar una partida le pide un conjunto de preguntas (de cierta dificultad establecida por el profesor en el servidor) para poder realizar la partida.
