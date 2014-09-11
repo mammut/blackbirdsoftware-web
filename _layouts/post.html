@@ -1,15 +1,49 @@
 ---
 layout: default
 ---
-<div class="post">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div id="backToTop" class="hidden-md hidden-lg"><i class="fa fa-angle-up"></i></div>
+    
+<!--home start-->
+<div id="home">
+  <div class="headerLine hidden-sm hidden-xs">
+  	<div id="menuF" class="default">
+  		<div class="container">
+  			<div class="row">
+  				<div class="logo col-md-4">
+  					<div>
+  						<a href="{{ site.baseurl }}/#news"><img src="{{ site.url }}/images/logo.png" alt="Blackbird Software"></a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+    </div>
+	</div>
+	<div class="container">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+		<div class="post">
 
-</div>
+		  <header class="post-header">
+		    <h1 class="post-title">{{ page.title }}</h1>
+		    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+		  </header>
+
+		  <article class="post-content">
+		    {{ content }}
+		  </article>
+
+		  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+		</div>
+	</div>
+
+
+{% include footer.html %}
