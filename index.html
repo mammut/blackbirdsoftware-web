@@ -12,9 +12,7 @@ layout: default
   			<div class="row">
   				<div class="logo col-md-4">
   					<div>
-  						<a href="{{ site.baseurl }}/">
-                Logo
-  						</a>
+  						<a href="{{ site.baseurl }}/"><img src="{{ site.url }}/images/logo.png" alt="Blackbird Software"></a>
   					</div>
   				</div>
   				<div class="col-md-8">
@@ -34,34 +32,29 @@ layout: default
 	</div>
 	<div class="container">
 		<div class="row">
-      <div class="col-md-4 hidden-sm hidden-xs">
-        <img src="{{ site.url }}/images/logo_big.png" alt="Blackbird Software">
-      </div>
-      <div class="col-md-8">
-      	<h3>Integrando nuevas tecnologías</h3>
-      	
-        <p>En realidad no se que escribir aquí pero esos títulos de informe de 2º medio me enferman. Mañana se me ocurrirá algo más propio para la empresa pero en este momento estoy en blanco.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore natus, molestiae voluptates esse fugit, odit cumque totam excepturi voluptatem fugiat dolorem voluptas voluptatum nobis sit suscipit aut dignissimos, itaque nihil.</p>
-      </div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 cBusiness">
-				<h3>The Best Way to Create Business Site &ndash; Attractive One Page</h3>
-				<h4>Discover elegant solution for your online business fast, reliable, affordable.</h4>
-        <br><br>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <img src="{{ site.url }}/images/logo-usm.jpg" class="img-responsive picsGall" alt="Universidad Técnica Federico Santa María">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-            <img src="{{ site.url }}/images/inf-logo.jpg" class="img-responsive picsGall" alt="Departamento de Informática UTFSM">
-          </div>
-        </div>
+      		<div class="col-md-4 hidden-sm hidden-xs">
+        		<img src="{{ site.url }}/images/logo_big.png" alt="Blackbird Software">
+      		</div>
+	      	<div class="col-md-8">
+		      	<h3>Apostando por las nuevas tecnologías</h3>
+		        <p>
+		          	En nuestro equipo entendemos que desarrollar soluciones que se ajuste a las necesidades propias de cualquier entorno puede ser una tarea compleja, pero al mismo tiempo nos permite experimentar con las nuevas tecnologías que permitan materializar una idea en forma de una plataforma que cubre las necesidades de nuestro cliente.
+		        </p>
+		        <p>
+		        	<strong>Blackbird Software</strong> es una pre-empresa que se forma el año 2014 como parte del ramo de Ingeniería de Software en la Universidad Técnica Federico Santa María, para presentarse en la XXII Feria de Software.
+		        </p>
+	        	<div class="row">
+		          <div class="col-sm-4 col-md-offset-2">
+		            <a href="http://www.usm.cl/">
+		            	<img src="{{ site.url }}/images/logo-usm.jpg" class="img-responsive" alt="Universidad Técnica Federico Santa María">
+		            </a>
+		          </div>
+		          <div class="col-sm-4">
+		          	<a href="http://www.inf.utfsm.cl/">
+		          		<img src="{{ site.url }}/images/inf-logo.jpg" class="img-responsive" alt="Departamento de Informática UTFSM">
+		          	</a>
+		          </div>
+		        </div>
 			</div>
 		</div>
 	</div>
@@ -90,35 +83,18 @@ layout: default
       {% for post in site.posts limit:2 %}
 			<div class="col-md-6  text-left">
   			<img class="img-responsive picsGall" src="{{ post.featured_image}}"/>
-  			<h3><a href="#">{{ post.title | capitalize }}</a></h3>
+  			<h3>{{ post.title | capitalize }}</h3>
   			<ul>
   				<li><i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}</li>
   				<li><i class="fa fa-tags"></i>Tags: {{ post.tags | join('-') }}</li>
-  				<!-- <li><a href="#"><i class="fa fa-comments"></i>0 Comentarios</a></li> -->
   			</ul>
-  			{{ post.content }}
+  			{{ post.excerpt }}
+  			<p><a href="{{ post.url }}"><i class="fa fa-plus-square"></i> Leer más</a></p>
   			<hr class="hrNews">
 			</div>
       {% endfor %}
 		</div>
 	</div>
-  <div class="container">
-    <div class="row news lb">
-      {% for post in site.posts limit:2 offset:2 %}
-      <div class="col-md-6  text-left">
-        <img class="img-responsive picsGall" src="{{ post.featured_image}}"/>
-        <h3><a href="#">{{ post.title | capitalize }}</a></h3>
-        <ul>
-          <li><i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}</li>
-          <li><i class="fa fa-tags"></i>Tags: {{ post.tags | join('-') }}</li>
-          <!-- <li><a href="#"><i class="fa fa-comments"></i>0 Comentarios</a></li> -->
-        </ul>
-        {{ post.content }}
-        <hr class="hrNews">
-      </div>
-      {% endfor %}
-    </div>
-  </div>
 </div>
     
 <!--contact start-->
@@ -150,11 +126,10 @@ layout: default
 				</form>
 			</div>
 			<div class="col-md-3 col-xs-12 cont">
+				<p>
+					Puedes comunicarte con nosotros a través de este formulario o a través de redes sociales.
+				</p>
 				<ul>
-					<li><i class="fa fa-home"></i>5512 Lorem Ipsum Vestibulum 666/13</li>
-					<li><i class="fa fa-phone"></i>+1 800 789 50 12, +1 800 450 6935</li>
-					<li><a href="#"><i class="fa fa-envelope"></i>mail@compname.com</li></a>
-					<li><a href="#"><i class="fa fa-twitter"></i>Twitter</li></a>
 					<li><a href="https://www.facebook.com/blackbirdsoftware" target="_blank"><i class="fa fa-facebook-square"></i>Facebook</li></a>
 				</ul>
 			</div>
