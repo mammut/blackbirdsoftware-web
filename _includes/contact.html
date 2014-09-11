@@ -1,0 +1,71 @@
+<!--contact start-->
+<div>
+  <div class="line4">         
+    <div class="container">
+      <div class="row Ama" id="contact">
+        <div class="col-md-12">
+        <h3>¿Tienes alguna pregunta? Contáctanos</h3>
+        <p>Será un gusto responder a tus dudas y sugerencias</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-xs-12 forma">
+        <form id="contact_form" method="POST" action="{{ site.url }}/contact.php">
+          <input type="text" class="col-md-6 col-xs-12 name" name='Name' placeholder='Nombre *'/>
+          <input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Email *'/>
+          <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Asunto'/>
+          <textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Mensaje *'></textarea>
+          <div class="cBtn col-xs-12">
+            <ul>
+              <li class="clear"><a href="#"><i class="fa fa-times"></i>Limpiar</a></li>
+              <li class="send"><a href="javascript:{}" onclick="document.getElementById('contact_form').submit(); return false;"><i class="fa fa-share"></i>Enviar Mensaje</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3 col-xs-12 cont">
+        <p>
+          Puedes comunicarte con nosotros a través de este formulario o a través de redes sociales.
+        </p>
+        <div class="fb-like-box" data-href="https://www.facebook.com/BlackbirdSoftware" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="line7">
+    <div class="container">
+      <div class="row footer">
+        <div class="col-md-12">
+          <h3>Síguenos en Redes Sociales</h3>
+        </div>
+        <div class="soc col-md-12">
+          <ul>
+            <li class="soc2"><a href="https://www.facebook.com/blackbirdsoftware" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lineBlack">
+    <div class="container">
+      <div class="row downLine">
+        <div class="col-md-6 text-left copy">
+          <p>Copyright &copy; 2014 Blackbird Software. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-right dm">
+          <ul id="downMenu">
+            <li class="active"><a href="#home">Inicio</a></li>
+            <li><a href="#team">Equipo</a></li>
+            <li><a href="#project">Proyectos</a></li>
+            <li><a href="#news">Noticias</a></li>
+            <li class="last"><a href="#contact">Contacto</a></li>
+            <!--li><a href="#features">Features</a></li-->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

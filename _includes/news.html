@@ -1,0 +1,30 @@
+<!--news start-->
+<div>
+  <div class="line4">   
+    <div class="container">
+      <div class="row Ama" id="news">
+        <div class="col-md-12">
+          <h3>Noticias</h3>
+          <p>Entérate de nuestras últimas noticias y eventos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row news">
+      {% for post in site.posts limit:2 %}
+      <div class="col-md-6  text-left">
+        <img class="img-responsive picsGall" src="{{ post.featured_image}}"/>
+        <h3>{{ post.title | capitalize }}</h3>
+        <ul>
+          <li><i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}</li>
+          <li><i class="fa fa-tags"></i>Tags: {{ post.tags | join('-') }}</li>
+        </ul>
+        {{ post.excerpt }}
+        <p><a href="{{ post.url }}"><i class="fa fa-plus-square"></i> Leer más</a></p>
+        <hr class="hrNews">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

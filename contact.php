@@ -10,25 +10,7 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
-	  <meta charset="utf-8" />
-	  <title>Envío Exitoso</title>
-	  
-	  <meta name="description" content="{{ site.description }}">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-	  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
-
-	  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.css">
-	  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.css">
-	  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/slicknav.css">
-	  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
-	  
-	  <link rel="icon" type="image/png" href="{{ site.url }}/images/favicon.png">
-
-	</head>
+	{% include head.html %}
   <body>
   	<!--home start-->
   	<div id="home">
@@ -54,5 +36,4 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
   			</div>
 		</div>
   </body>
-
 </html>

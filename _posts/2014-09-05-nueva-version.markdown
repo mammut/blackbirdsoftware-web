@@ -2,7 +2,7 @@
 layout: post
 title:  "Reino Aritmetico v0.0.2"
 date:   2014-09-05 19:13:37
-categories: jekyll update
+categories: noticias
 featured_image: "img/news/release-0.0.2.jpg"
 tags: ["Reino Aritmetico", 'Release']
 ---

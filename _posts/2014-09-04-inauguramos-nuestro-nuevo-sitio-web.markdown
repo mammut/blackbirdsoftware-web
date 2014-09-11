@@ -2,8 +2,8 @@
 layout: post
 title:  "Inauguramos nuestro nuevo sitio web"
 date:   2014-09-11 19:13:37
-categories: update 
-featured_image: "images/picNews/news2.jpg"
+categories: noticias 
+featured_image: "img/news/sitio-web.jpg"
 tags: ["Sitio Web", 'Diseño', 'Responsive']
 ---
 Hoy 11 de setiembre blackbird software inaugura su nuevo sitio web. Aquí podrás conocer todo sobre nosotros, quienes somos, nuestros proyectos y actualizaciones.
