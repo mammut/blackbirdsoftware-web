@@ -10,30 +10,60 @@ mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 ?>
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
+  <head>
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/slicknav.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css">
+    
+    <link rel="icon" type="image/png" href="{{ site.url }}/images/favicon.png">
+
+  </head>
   <body>
-  	<!--home start-->
-  	<div id="home">
-  	  <div class="headerLine hidden-sm hidden-xs">
-  	  	<div id="menuF" class="default">
-  	  		<div class="container">
-  	  			<div class="row">
-  	  				<div class="logo col-md-4">
-  	  					<div>
-  	  						<a href="{{ site.baseurl }}/"><img src="{{ site.url }}/images/logo.png" alt="Blackbird Software"></a>
-  	  					</div>
-  	  				</div>
-  	  			</div>
-  	  		</div>
-  	    </div>
-  		</div>
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-md-8">
-		  			<h3>¡Gracias por tu mensaje!</h3>
-		  			<p><a href="/">Volver al sitio</a></p>
-  				</div>
-  			</div>
-		</div>
+
+    <div id="home">
+      <div class="headerLine hidden-sm hidden-xs">
+        <div id="menuF" class="default">
+          <div class="container">
+            <div class="row">
+              <div class="logo col-md-4">
+                <div>
+                  <a href="{{ site.baseurl }}/"><img src="{{ site.url }}/images/logo.png" alt="Blackbird Software"></a>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="navmenu"style="text-align: center;">
+                  <ul id="menu">
+                    <li class="active" ><a href="{{ site.baseurl }}/#home">Inicio</a></li>
+                    <li><a href="{{ site.baseurl }}/#team">Equipo</a></li>
+                    <li><a href="{{ site.baseurl }}/#project">Proyectos</a></li>
+                    <li><a href="{{ site.baseurl }}/#news">Noticias</a></li>
+                    <li class="last"><a href="{{ site.baseurl }}/#contact">Contacto</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-8">
+    			<h3>¡Gracias por tu mensaje!</h3>
+    			<p><a href="/">Volver al sitio</a></p>
+    		</div>
+    	</div>
+    </div>
   </body>
 </html>
