@@ -2,7 +2,7 @@
 <div>
   <div class="line4">
     <div class="container">
-      <div class="row Ama" id="news">
+      <div class="row Ama" id="noticias">
         <div class="col-md-12">
           <h3>Noticias</h3>
           <p>Entérate de nuestras últimas noticias y eventos</p>
@@ -21,7 +21,11 @@
           <li><i class="fa fa-tags"></i>Tags: {{ post.tags | join('-') }}</li>
         </ul>
         {{ post.excerpt }}
-        <p><a href="{{ post.url }}"><i class="fa fa-plus-square"></i> <strong>Leer más</strong></a></p>
+        <p style="float: left">
+          <a href="{{ post.url }}"><i class="fa fa-plus-square"></i> <strong>Leer más</strong></a>
+        </p>
+        <div style="float: right" class="fb-like" data-href="{{ post.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        <div style="clear: both"></div>
         <hr class="hrNews">
       </div>
       {% endfor %}
