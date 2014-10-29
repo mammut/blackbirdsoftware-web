@@ -1,0 +1,82 @@
+html {
+  background: #01b081 url('/images/bg-ra.gif') repeat-x fixed;
+}
+
+body {
+  background: transparent !important;
+  color: white;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+h1, h2, h3, h4 {
+  color: #F0EDED;
+}
+
+h2, h3, h4, p {
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 13pt;
+}
+
+h3.warrior {
+  color: #F27200;
+}
+
+h3.archer {
+  color: #30BD13;
+}
+
+h3.wizard {
+  color: #009ABD;
+}
+
+.youtube {
+    width: 600px;
+    height: 337px;
+    position: relative;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    margin: auto;
+}
+
+.cBtn ul{
+  margin-left: -37px;
+  margin-top: 37px;
+  display: inline-block;
+}
+.cBtn ul li{
+  margin-bottom: 15px;
+  margin-right: 10px;
+  border-radius:4px;
+  float:left;
+  list-style:none;
+  padding:10px;
+  background:#2f2f2f;
+  box-shadow: 0px 2px 0px 0px #000;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top:11px;
+}
+.cBtn ul li:last-child{
+  margin-right: 0;
+}
+.cBtn ul li a{
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#fff;
+  font-size: 13px;
+  text-align:center;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 700;
+}
+.cBtn ul li:hover{
+  cursor:pointer;
+  background:#1fcdff;
+  color:#fff;
+  box-shadow: 0px 2px 0px 0px #179abf;
+}
