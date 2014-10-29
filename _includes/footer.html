@@ -1,41 +1,7 @@
 <div id="backToTop" class="hidden-md hidden-lg"><i class="fa fa-angle-up"></i></div>
 
-<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-1.11.1.min.js"></script>
-<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.slicknav.js"></script>
-<script type="text/javascript">
-  $(function(){ // document ready
-    $('#menu').slicknav();
-
-    if (!!$('#menuF').offset()) { // make sure "#menuF" element exists
-      var stickyTop = $('#menuF').offset().top; // returns number
-      $(window).scroll(function(){ // scroll event
-        var windowTop = $(window).scrollTop(); // returns number
-        if (stickyTop < windowTop){
-          $('#menuF').removeClass('default').addClass('fixed');
-        }
-        else {
-          $('#menuF').removeClass('fixed').addClass('default');
-        }
-      });
-    }
-
-    $('.navmenu ul li a, #downMenu li a').click(function(e) {
-      e.preventDefault();
-      var $this = $(this);
-      $('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
-      $('.active').removeClass('active');
-      $this.parent().addClass('active');
-      document.title = "BB:Software / " + $this.text();
-    });
-
-    $('#backToTop').on('click', function(){
-      $('html, body').animate({scrollTop: 0}, 800);
-    });
-
-    if (location.hash){
-
-      $('html, body').animate({scrollTop: $(location.hash).offset().top - 80}, 800);
-    }
-  });
-</script>
+<!-- Friends don't let friends put <script> tags in the <head> -Paul Irish (https://twitter.com/paul_irish/status/416759189961072640) -->
+<script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/bower_components/slicknav/jquery.slicknav.js"></script>
+<script type="text/javascript">$(function(){ $('#menu').slicknav(); });</script>

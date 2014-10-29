@@ -14,14 +14,31 @@
     <div class="row">
       <div class="col-md-9 col-xs-12 forma">
         <form id="contact_form" method="POST" action="{{ site.url }}/contact.php">
-          <input type="text" class="col-md-6 col-xs-12 name" name='Name' placeholder='Nombre *'/>
-          <input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Correo Electrónico *'/>
-          <input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Asunto'/>
-          <textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Mensaje *'></textarea>
+          <div class="col-md-6 col-xs-12 name">
+            <input type="text" name='Name' placeholder='Nombre *' required>
+          </div>
+          <div class="col-md-6 col-xs-12 Email">
+            <input type="email" name='Email' placeholder='Correo Electrónico *' required>
+          </div>
+          <div class="col-md-12 col-xs-12 Subject">
+            <input type="text" name='Subject' placeholder='Asunto'/>
+          </div>
+          <div class="col-md-12 col-xs-12 Message">
+            <textarea type="text" name='Message' placeholder='Mensaje *' required></textarea>
+          </div>
+
           <div class="cBtn col-xs-12">
             <ul>
-              <li class="send"><a href="javascript:{}" onclick="document.getElementById('contact_form').submit(); return false;"><i class="fa fa-share"></i>Enviar Mensaje</a></li>
-              <li class="send"><a href="#"><i class="fa fa-times"></i>Limpiar Formulario</a></li>
+              <li class="send">
+                <button type="submit">
+                  <i class="fa fa-share"></i>Enviar Mensaje
+                </button>
+              </li>
+              <li class="send">
+                <button type="reset">
+                  <i class="fa fa-times"></i>Limpiar Formulario
+                </button>
+              </li>
             </ul>
           </div>
         </form>
@@ -30,7 +47,7 @@
         <p>
           Puedes comunicarte con nosotros a través de este formulario o a través de redes sociales.
         </p>
-        <div class="fb-like-box" data-href="https://www.facebook.com/BlackbirdSoftware" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+        <div class="fb-like-box" style="overflow: hidden; width: 261px" data-href="https://www.facebook.com/BlackbirdSoftware" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
       </div>
     </div>
   </div>
@@ -57,17 +74,16 @@
       <div class="row downLine">
         <div class="col-md-6 text-left copy">
           <p>Copyright &copy; 2014 Blackbird Software. Todos los derechos reservados.<br/>
-          Av. Vicuña Mackenna 3939, San Joaquín, Santiago de Chile. | <strong>Teléfono:</strong> +56 2 23531200
+          Av. Vicuña Mackenna 3939, San Joaquín, Santiago de Chile. | <strong><i class="fa fa-phone"> Tel:</i></strong> <a href="tel:+56223531200">+56 2 2353 1200</a>
           </p>
         </div>
         <div class="col-md-6 text-right dm">
           <ul id="downMenu">
-            <li class="active"><a href="#home">Inicio</a></li>
-            <li><a href="#team">Equipo</a></li>
-            <li><a href="#project">Proyectos</a></li>
-            <li><a href="#news">Noticias</a></li>
-            <li class="last"><a href="#contact">Contacto</a></li>
-            <!--li><a href="#features">Features</a></li-->
+            <li class="active"><a href="#inicio">Inicio</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li class="last"><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
       </div>

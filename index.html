@@ -1,18 +1,16 @@
 ---
 layout: default
-title: BB:Software / Inicio
+title: BB:Software | Inicio
+scripts: ["bower_components/jquery-validation/dist/jquery.validate.js", "js/home.js"]
+description: Blackbird Software es una pre-empresa que se forma el año 2014 como parte del ramo de Ingeniería de Software en la UTFSM, para presentarse en la XXII Feria de Software.
 ---
 
-{% include nav.html %}
+{% include home/about.html %}
 
-{% include about.html %}
+{% include home/team.html %}
 
-{% include team.html %}
+{% include home/projects.html %}
 
-{% include projects.html %}
+{% include home/news.html %}
 
-{% include news.html %}
-
-{% include contact.html %}
-
-{% include footer.html %}
+{% include home/contact.html %}

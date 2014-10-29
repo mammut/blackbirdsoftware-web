@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Blackbird Software es una pre-empresa que se forma el año 2014
   como parte del ramo de Ingeniería de Software en la Universidad
   Técnica Federico Santa María, para presentarse en la XXII Feria de Software.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
