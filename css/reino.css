@@ -5,14 +5,19 @@ html {
 body {
   background: transparent !important;
   color: white;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 .container {
-  margin-top: 2em;
+  background: rgba(0, 0, 0, .55);
+  padding-top: 2em;
+  margin-top: 0;
+  padding-bottom: 2em;
 }
 
 h1, h2, h3, h4 {
   color: #F0EDED;
+  font-weight: 400;
 }
 
 h2, h3, h4, p {
@@ -21,6 +26,8 @@ h2, h3, h4, p {
 
 p {
   font-size: 13pt;
+  margin-bottom: 1.5em;
+  font-weight: 300;
 }
 
 h3.warrior {

@@ -17,7 +17,7 @@ $(function(){
   $('.navmenu ul li a, #downMenu li a').click(function(e) {
     e.preventDefault();
     var $this = $(this);
-    $('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
+    $('html, body').animate({scrollTop: $(this.hash).offset().top - 60}, 800);
     $('.active').removeClass('active');
     $this.parent().addClass('active');
     document.title = "BB:Software | " + $this.text();
@@ -27,7 +27,7 @@ $(function(){
   $(window).on('hashchange', function() {
     $('.active').removeClass('active');
     $('#menu .'+location.hash.split('#')[1]).addClass('active');
-    $('html, body').scrollTop( $(location.hash).offset().top - 80);
+    $('html, body').scrollTop( $(location.hash).offset().top - 60);
   });
   if (location.hash){ $(window).trigger('hashchange'); }
 

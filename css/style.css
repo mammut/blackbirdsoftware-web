@@ -465,13 +465,12 @@ color: #1fcdff;
 .team h5{
 	margin-top: -3px;
 	font-size:13px;
-	color:#a9a9a9;
+	color:#6b6b6b;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 }
 .team p{
 	margin-top: 12px;
-	font-size: 13px;
 	color: #666;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
@@ -663,7 +662,7 @@ color: #1fcdff;
 
 .Ama{
 	margin-top: 201px;
-	margin-bottom: 133px;
+	margin-bottom: 88px;
 /*	margin-top: 241px;
 	margin-bottom: 94px;*/
 }
@@ -841,7 +840,6 @@ color: #1fcdff;
 .news p{
 	line-height: 23px;
 	color:#666666;
-	font-size: 13px;
 	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 }
