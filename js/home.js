@@ -14,24 +14,39 @@ $(function(){
     });
   }
 
+  var moving = false;
+
+  $('.end, .begin').waypoint(function(){
+    if ( ! moving){
+      var $this = $(this);
+      var $link = $($this.data('whom'));
+      $('.active').removeClass('active');
+      $link.addClass('active');
+      document.title = "BB:Software | " + $link.find('a').first().text();
+      // history.pushState(null, null, $this.data('whom').replace('.', '#')); //Descomentare esta linea para hacer el scrolling un poquito lag!
+    }
+  });
+
   $('.navmenu ul li a, #downMenu li a').click(function(e) {
     e.preventDefault();
     var $this = $(this);
-    $('html, body').animate({scrollTop: $(this.hash).offset().top - 60}, 800);
+    moving = true;
+    $('html, body').animate({scrollTop: $(this.hash).offset().top - 60}, 800, function(){
+      moving = false;
+    });
     $('.active').removeClass('active');
     $this.parent().addClass('active');
     document.title = "BB:Software | " + $this.text();
-    location.hash = this.hash;
+    history.pushState(null, null, this.hash);
+    return false;
   });
 
   $(window).on('hashchange', function() {
     $('.active').removeClass('active');
-    $('#menu .'+location.hash.split('#')[1]).addClass('active');
-    $('html, body').scrollTop( $(location.hash).offset().top - 60);
+    $('#menu .'+window.location.hash.split('#')[1]).addClass('active');
+    $('html, body').scrollTop( $(window.location.hash).offset().top - 60);
   });
-  if (location.hash){ $(window).trigger('hashchange'); }
-
-
+  if (window.location.hash){ $(window).trigger('hashchange'); }
 
   /**
    * Contact form validation
@@ -41,9 +56,6 @@ $(function(){
     email: "Por favor ingrese un email válido."
   });
   $('#contact_form').validate();
-
-
-
 
   /**
    * Back to top button

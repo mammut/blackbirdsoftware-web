@@ -1,3 +1,4 @@
+<span class="begin" data-whom=".noticias"></span>
 <!--news start-->
 <div>
   <div class="line4">
@@ -15,7 +16,7 @@
       {% for post in site.posts limit:2 %}
       <div class="col-md-6  text-left">
         <img class="img-responsive picsGall" src="{{ post.featured_image}}"/>
-        <h3>{{ post.title | capitalize }}</h3>
+        <h3><a href="{{ post.url }}">{{ post.title | capitalize }}</a></h3>
         <ul>
           <li><i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}</li>
           <li><i class="fa fa-tags"></i>Tags: {{ post.tags | join('-') }}</li>
@@ -41,3 +42,4 @@
     </ul>
   </div>
 </div>
+<span class="end" data-whom=".noticias"></span>
